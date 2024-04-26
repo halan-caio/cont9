@@ -1,12 +1,12 @@
 package com.sinerji.entities;
 
 public class Difference {
-	  private int line;
+	  private String line;
 	    private int position;
 	    private String fromFileOne;
 	    private String fromFileTwo;
 
-	    public Difference(int line, int position, String fromFileOne, String fromFileTwo) {
+	    public Difference(String line, int position, String fromFileOne, String fromFileTwo) {
 	        this.line = line;
 	        this.position = position;
 	        this.fromFileOne = fromFileOne;

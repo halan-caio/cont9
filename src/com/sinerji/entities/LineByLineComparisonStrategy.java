@@ -17,14 +17,14 @@ public class LineByLineComparisonStrategy  implements ComparisonStrategy {
 	                int minLength = Math.min(lineOne.length(), lineTwo.length());
 	                for (int j = 0; j < minLength; j++) {
 	                    if (lineOne.charAt(j) != lineTwo.charAt(j)) {
-	                        differences.add(new Difference(i + 1, j + 1, String.valueOf(lineOne.charAt(j)), String.valueOf(lineTwo.charAt(j))));
+	                        differences.add(new Difference(lineOne.substring(0, 6), j + 1, String.valueOf(lineOne.charAt(j)), String.valueOf(lineTwo.charAt(j))));
 	                    }
 	                }
 	                if (lineOne.length() != lineTwo.length()) {
 	                    int longerLength = Math.max(lineOne.length(), lineTwo.length());
 	                    for (int j = minLength; j < longerLength; j++) {
 	                        char charFromLonger = lineOne.length() > lineTwo.length() ? lineOne.charAt(j) : lineTwo.charAt(j);
-	                        differences.add(new Difference(i + 1, j + 1, lineOne.length() > lineTwo.length() ? String.valueOf(charFromLonger) : "", lineOne.length() > lineTwo.length() ? "" : String.valueOf(charFromLonger)));
+	                        differences.add(new Difference(lineOne.substring(0, 6), j + 1, lineOne.length() > lineTwo.length() ? String.valueOf(charFromLonger) : "", lineOne.length() > lineTwo.length() ? "" : String.valueOf(charFromLonger)));
 	                    }
 	                }
 	            }
