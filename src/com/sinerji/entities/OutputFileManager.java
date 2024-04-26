@@ -1,5 +1,8 @@
 package com.sinerji.entities;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 public class OutputFileManager {
@@ -16,7 +19,14 @@ public class OutputFileManager {
 	}
 
 	public void writeDifferencesToFile(List<Difference> differences, String outputPath) {
-		// Implementar escrita no arquivo de saída
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputPath))) {
+            for (Difference diff : differences) {
+                writer.write(diff.toString());
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 	}
 
 }
