@@ -4,12 +4,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import com.sinerji.entities.Difference;
-import com.sinerji.entities.DifferenceFinder;
-import com.sinerji.entities.FileReaderFactory;
-import com.sinerji.entities.LineByLineComparisonStrategy;
-import com.sinerji.entities.OutputFileManager;
-import com.sinerji.entities.interfaces.CSVFileReader;
+import com.sinerji.Comparison.Difference;
+import com.sinerji.Comparison.DifferenceFinder;
+import com.sinerji.Comparison.LineByLineComparisonStrategy;
+import com.sinerji.output.OutputFileManager;
+import com.sinerji.readers.factory.FileReaderFactory;
+import com.sinerji.readers.interfaces.CSVFileReader;
 
 public class Main {
 

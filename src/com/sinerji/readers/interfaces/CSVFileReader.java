@@ -1,4 +1,4 @@
-package com.sinerji.entities.interfaces;
+package com.sinerji.readers.interfaces;
 
 import java.util.List;
 

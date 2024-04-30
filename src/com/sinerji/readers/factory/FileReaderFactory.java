@@ -1,6 +1,8 @@
-package com.sinerji.entities;
+package com.sinerji.readers.factory;
 
-import com.sinerji.entities.interfaces.CSVFileReader;
+import com.sinerji.readers.ContimaticFileReader;
+import com.sinerji.readers.SPEDFileReader;
+import com.sinerji.readers.interfaces.CSVFileReader;
 
 public class FileReaderFactory {
 	public static CSVFileReader getReader(String fileType) {

@@ -1,9 +1,9 @@
-package com.sinerji.entities;
+package com.sinerji.Comparison;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.sinerji.entities.interfaces.ComparisonStrategy;
+import com.sinerji.Comparison.interfaces.ComparisonStrategy;
 
 public class LineByLineComparisonStrategy implements ComparisonStrategy {
 	public List<Difference> compare(List<String> fileOneLines, List<String> fileTwoLines) {

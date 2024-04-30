@@ -1,4 +1,4 @@
-package com.sinerji.entities;
+package com.sinerji.Comparison;
 
 public class Difference {
 	  private String line;

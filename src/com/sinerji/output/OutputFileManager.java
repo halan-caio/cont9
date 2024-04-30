@@ -1,9 +1,11 @@
-package com.sinerji.entities;
+package com.sinerji.output;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
+
+import com.sinerji.Comparison.Difference;
 
 public class OutputFileManager {
 	private static OutputFileManager instance;
