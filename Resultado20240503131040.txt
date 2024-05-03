@@ -1,0 +1,7 @@
+Difference found at line C190, Column: 2 name: CST de ICMS: '060' vs '090'
+Difference found at line C100, Column: 12 name: Valor: '1144,92' vs '5000,01'
+Difference found at line C100, Column: 13 name: Pagamento: '1' vs '2'
+Difference found at line C190, Column: 3 name: CFOP: '1556' vs '1102'
+Difference found at line C100, Column: 17 name: Tipo de Frete: '9' vs '0'
+Difference found at line D100, Column: 23 name: Conta Contábil: '4.01.02.01' vs '5.01.01.01.0'
+Difference found at line D100, Column: 23 name: Conta Contábil: '4.01.02.01' vs '5.01.01.01.0'

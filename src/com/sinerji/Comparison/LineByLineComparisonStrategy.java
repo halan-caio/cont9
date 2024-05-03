@@ -10,11 +10,14 @@ public class LineByLineComparisonStrategy implements ComparisonStrategy {
 		List<Difference> differences = new ArrayList<>();
 		int numLines = Math.min(fileOneLines.size(), fileTwoLines.size());
 
+		// Verifica se as linhas são diferentes
 		for (int i = 0; i < numLines; i++) {
 			String[] lineOne = fileOneLines.get(i).split("\\|");
 			String[] lineTwo = fileTwoLines.get(i).split("\\|");
 			if (!lineOne.equals(lineTwo)) {
 				int minLength = Math.min(lineOne.length, lineTwo.length);
+				
+				// Verifica se os elementos das linhas são diferentes
 				for (int j = 0; j < minLength; j++) {
 					if (!lineOne[j].equals(lineTwo[j]) && !areEquals(lineOne[j], lineTwo[j]) 
 							&& !areEqualDouble(lineOne[j], lineTwo[j])) {
